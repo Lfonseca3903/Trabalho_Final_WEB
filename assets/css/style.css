@@ -1,0 +1,33 @@
+/* NAVBAR */
+
+.logo {
+    width: 28px;
+    height: 28px;
+    background-color: white;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #ffffff, #747474);
+    margin: 0 8px;
+}
+ 
+h1 {
+    font-style: italic;
+    font-size: 24px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CAROUSEL */
+
+.carousel {
+    align-content: center;
+    justify-content: center;
+    //max-height: 75rem;
+    max-width: 75rem;;
+    height: 100vh;
+  }
+  
+.carousel-item img {
+    height: auto;
+    width: 100%;
+  }
+  
