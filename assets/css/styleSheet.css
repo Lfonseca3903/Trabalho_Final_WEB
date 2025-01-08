@@ -1,0 +1,39 @@
+/* blog cards */
+
+*{
+    background-color: #E8E8E8;
+}
+
+#rowBlogCard{
+    padding-bottom: 30px;
+}
+
+#imgDivBlogCard{
+    width: 320px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#cardBlogCard{
+    border-color: #3D6A6E;
+}
+
+#titleBlogCard{
+    color: #333333;
+}
+
+#headerBlogCard{
+    color: #333333;
+}
+
+#previewBlogCard{
+    color: #6D6D6D;
+}
+
+#buttonBlogCard{
+    background-color: #D7B76C;
+    --bs-btn-color:#333333;
+    --bs-btn-hover-color: #F9F9F9;
+    --bs-btn-border-color: #3D6A6E;
+    border-radius: 20px;
+}
