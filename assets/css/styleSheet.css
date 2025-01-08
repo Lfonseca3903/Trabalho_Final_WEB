@@ -1,33 +1,63 @@
-/* blog cards */
+/* parâmetros globais */
 
-*{
-    background-color: #E8E8E8;
+    .main{
+        background-color: #E8E8E8;
+        padding-bottom: 0px;
+    }
+
+    /* texto primário */
+    #titleBlogCard, #headerBlogCard{
+        color: #333333;
+    }
+
+    /* texto secundário */
+    #previewBlogCard{
+        color: #6D6D6D;
+    }
+
+
+
+/* navbar */
+
+.logo {
+    width: 28px;
+    height: 28px;
+    background-color: white;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #ffffff, #747474);
+    margin: 0 8px;
+}
+ 
+h1 {
+    font-style: italic;
+    font-size: 24px;
+    margin: 0px;
+    padding: 0px;
 }
 
+
+/* blog cards */
+
 #rowBlogCard{
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 #imgDivBlogCard{
     width: 320px;
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 20px;
 }
+
+#imgBlogCard{
+    border-radius: 8%;
+    width: 320px;
+}
+    
+
 
 #cardBlogCard{
     border-color: #3D6A6E;
-}
-
-#titleBlogCard{
-    color: #333333;
-}
-
-#headerBlogCard{
-    color: #333333;
-}
-
-#previewBlogCard{
-    color: #6D6D6D;
 }
 
 #buttonBlogCard{
@@ -37,3 +67,51 @@
     --bs-btn-border-color: #3D6A6E;
     border-radius: 20px;
 }
+
+/* blog article */
+
+    /* banner */
+    @media only screen and (max-width: 768px) {
+        #bannerArticleDiv {
+          display: none;
+        }
+      }
+
+    #bannerArticleDiv{
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    #bannerImg{
+        max-width: 1440px;
+        height: 400px;
+        width: 100%;
+        filter: blur(5px);
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+    }
+
+    /* article header */
+
+    
+
+    #articleHeader{
+        
+        max-width: 768px;
+        padding-left: auto;
+        padding-right: auto;
+        @media only screen and (max-width: 768px) {
+            padding-top: 0 !important; 
+        }
+        padding-top: 10%;
+
+        
+        img{
+            width: 100%;
+            
+
+        }
+    }

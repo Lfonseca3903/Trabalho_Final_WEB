@@ -8,14 +8,41 @@
     <link rel="stylesheet" href="assets/css/styleSheet.css">
 </head>
 <body>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <div class="navbar-brand logo"></div>
+                    <a class="navbar-brand ms-2" href="/index.html">
+                        <h1>NOME FOTÓGRAFO</h1>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="torneios.html">Biografia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="forum.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactos.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
     <main>
+        
+
     <!-- Div 'container' contém todos os 'posts' -->
      <div class="container-md pt-5">
 
         <!-- Div para cada 'post' no blog -->
         <div id="rowBlogCard" class="row justify-content-center">
             <div id="imgDivBlogCard" class="col-12 col-sm-4 col-lg-3">
-                <a href="#"> <img id="imgBlogCard" src="assets/img/landscapeW320.png"> </a>
+                <a href="blogArticle1.html"> <img id="imgBlogCard" src="assets/img/landscapeNoRadius.png"> </a>
             </div>
             <div class="col-12 col-sm-8 col-lg-7">
                 <div id="cardBlogCard" class="card">
@@ -23,7 +50,7 @@
                     <div class="card-body">
                       <h5 id="headerBlogCard" class="card-title">Porque decidi criar um blog</h5>
                       <p id="previewBlogCard" class="card-text">Text preview do primeiro parágrafo do artigoText preview do primeiro parágrafo do artigoText preview do primeiro parágrafo do artigoText preview do primeiro parágrafo do artigo</p>
-                      <a id="buttonBlogCard" href="#" class="btn btn-primary">Saiba mais</a>
+                      <a id="buttonBlogCard" href="blogArticle1.html" class="btn btn-primary">Saiba mais</a>
                     </div>
                   </div>
             </div>
@@ -102,6 +129,12 @@
 
      </div>
     </main>
+
+    <!-- footer -->
+    <footer>
+        
+    </footer>
+
     <!-- Script bootstrap JS --><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
