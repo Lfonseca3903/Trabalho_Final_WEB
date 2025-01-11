@@ -129,4 +129,12 @@ nav{
             padding-bottom: 5%;
             max-width: 60%;
         }
+
+        button{
+            background-color: #D7B76C;
+            --bs-btn-color:#333333;
+            --bs-btn-hover-color: #F9F9F9;
+            --bs-btn-border-color: #3D6A6E;
+            border-radius: 20px;
+        }
     }
