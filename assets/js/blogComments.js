@@ -98,6 +98,18 @@ function addComment(postIndex) {
     }
 }
  
+function CarregarComentarioDefault (nome, texto) {
+    const defaultPost ={    
+        title: nome,
+        body: texto,
+        likes: 0,
+        comments: []
+    } 
+    posts.push(defaultPost);
+
+    renderPosts();
+}
+
 // Função para adicionar um like ao comentário
 function addCommentLike(postIndex, commentIndex) {
     posts[postIndex].comments[commentIndex].likes += 1;
