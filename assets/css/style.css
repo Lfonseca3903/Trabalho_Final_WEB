@@ -1,33 +1,81 @@
+body {
+  background-color: rgb(0, 0, 0);
+  color: blanchedalmond;
+}
+
 /* NAVBAR */
 
-.logo {
-    width: 28px;
-    height: 28px;
-    background-color: white;
-    border-radius: 50%;
-    background: radial-gradient(circle at 30% 30%, #ffffff, #747474);
-    margin: 0 8px;
-}
- 
 h1 {
-    font-style: italic;
-    font-size: 24px;
-    margin: 0px;
-    padding: 0px;
+  font-size: 50px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.jersey-10-regular {
+  font-family: "Jersey 10", serif;
+  font-weight: small;
+  font-style: normal;
+}
+
+/* SIDEBAR */
+
+#sidebar {
+  max-height: 100vh;
+  max-width: 22.5vh;
+}
+
+#retratos, #paisagens, #eventos {
+  transition: 0.3s ease-in-out;
+  color:rgb(250, 235, 215);
+}
+
+#retratos:hover, #paisagens:hover {
+  transform: translateY(-0.5rem);
+  transition: 0.3s ease-in-out;
+  color:rgb(170, 170, 170);
+}
+
+#eventos:hover {
+  transform: perspective(100px) rotateX(20deg) translateY(-0.5rem);
+  transition: 0.3s ease-in-out;
+  color:rgb(170, 170, 170);
+}
+
+#concertos, #desportos {
+  margin-left: 1.5rem;
+  transition: 0.3s ease-in-out;
+  color:rgb(250, 235, 215);
+}
+
+#concertos:hover, #desportos:hover {
+  transform: translateX(0.5rem);
+  transition: 0.3s ease-in-out;
+  color:rgb(170, 170, 170);
 }
 
 /* CAROUSEL */
 
+#carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
 .carousel {
-    align-content: center;
-    justify-content: center;
-    //max-height: 75rem;
-    max-width: 75rem;;
-    height: 100vh;
-  }
-  
+  align-content: center;
+  justify-content: center;
+  max-height: 75rem;
+  max-width: 75rem;
+}
+
 .carousel-item img {
-    height: auto;
-    width: 100%;
-  }
-  
+  height: auto;
+  width: 100%;
+}
+
+.carousel-inner img {
+  object-fit: cover;
+  height: 500px;
+}
