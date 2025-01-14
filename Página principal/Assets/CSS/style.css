@@ -22,4 +22,14 @@ nav {
 
 .card-service {
     margin-bottom: 3rem;
+    border-radius: 1rem;
 }
+
+form {
+    padding: 3%;
+    text-align: center;
+    border: solid 2px #0000003d;
+    border-radius: 1rem;
+}
+
+
