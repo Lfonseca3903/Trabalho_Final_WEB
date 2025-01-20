@@ -9,11 +9,19 @@
     /* texto primário */
     #titleBlogCard, #headerBlogCard, #articleTitle, #rowBlogText {
         color: #333333;
+        font-family: "Montserrat", serif;
+        font-optical-sizing: auto;
+        font-weight: 350;
+        font-style: normal;
     }
 
     /* texto secundário */
     #previewBlogCard, #rowAutorData, #imgDescription{
         color: #6D6D6D;
+        font-family: "Montserrat", serif;
+        font-optical-sizing: auto;
+        font-weight: 250;
+        font-style: normal;
     }
 
 
@@ -40,6 +48,9 @@ nav{
 
 #rowBlogCard{
     padding-bottom: 50px;
+    #titleBlogCard{
+        font-weight: 700;
+    }
 }
 
 #imgDivBlogCard{
@@ -140,3 +151,14 @@ nav{
             border-radius: 20px;
         }
     }
+
+    footer {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+       
+      footer a {
+        text-decoration: none;
+      }
