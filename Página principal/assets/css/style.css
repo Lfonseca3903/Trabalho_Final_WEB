@@ -1,0 +1,42 @@
+nav {
+
+    h1 {
+        font-style: italic;
+        font-size: 24px;
+        margin: 0px;
+        padding: 0px;
+      }
+       
+      .jersey-10-regular {
+        font-family: "Jersey 10", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+       
+      .logo {
+        width: 28px;
+        height: 28px;
+        background-color: white;
+        border-radius: 50%;
+        background: radial-gradient(circle at 30% 30%, #ffffff, #747474);
+        margin: 0 8px;
+      }
+}
+
+#biografia, #weddings, #drone, #family {
+    text-align: center;
+}
+
+.card-service {
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+}
+
+form {
+    padding: 3%;
+    text-align: center;
+    border: solid 2px #0000003d;
+    border-radius: 1rem;
+}
+
+
