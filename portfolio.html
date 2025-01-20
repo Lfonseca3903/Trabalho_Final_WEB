@@ -1,205 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <!-- Bootstrap Link-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap"
-      rel="stylesheet"
-    />
-    <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <!-- Bootstrap Link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Lobster&display=swap"
+    rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/portfolio.css">
+</head>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <div class="d-flex align-items-center">
-          <a class="navbar-brand ms-2" href="/index.html">
-            <h1 class="jersey-10-regular">LEEROY JENKINS</h1>
-          </a>
-        </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="torneios.html">Biografia</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="forum.html">Serviços</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="loja.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contactos.html">Contacto</a>
-            </li>
-          </ul>
-        </div>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <a class="navbar-brand ms-2" href="/index.html">
+          <h1 class="lobster-regular">Leeroy Jenkins</h1>
+        </a>
       </div>
-    </nav>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Biografia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfólio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Main -->
-    <div class="container-fluid">
-      <div class="row flex-nowrap">
-        
-        <!-- Sidebar -->
-        <div id="sidebar" class="col-auto col-md-3 col-xl-2 bg-dark px-3">
-          <ul
-            class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
-            id="menu"
-          >
-            <!-- Retratos -->
-            <li class="nav-item">
-              <a
-                href="#"
-                id="retratos"
-                class="nav-link align-middle px-0"
-                onclick="mostrarGaleria('retratos')"
-              >
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADMUlEQVR4nO1ZQWsTURBeRVv0olXpoXoQheLJk3fBm6IW1GCa99LeeqmpejLdGVlFRAQteFMP9qQnaQX/gF5sRdAqCBUrolAUvVXT7kzQJ5M26UtI0qzZNHvYDwYCOztvvjcz701mHSdGjBgNQbv+aQU8qYFnNfAnEYX0qn/UP2Drpdz8UY38vqgTUGY18kQa/VNOmNDI9zWyqS5029ZVQM9q6wYRuhuK8wr9M3UWWdSQP1JG1uURBfQnDBLpMCJRSJsVgwr5QTrr96a8pX0iQ57ZWu2dVNZ0FXWCSDrr9yrgcYvERPMEkOeKBmURp8UYgKX91obNNW1QA88XDSa9XI/TYiS9XE8pAsDzTRuMCQREMo5ABeIUCohknEJNplAmYzpXbuNphfRbRCNNKeCMPIt0BJSX26OQ39ZqDRTwjOhEkkAmYzrrOW/Jm4RnOiJHQLs8stoCkC8pU+iJsqarkFJIfsmxy3wuegSQXlqpkql8rly+YHWxU9EjAPSr1PRlTVfl84RndlgRWogcAYW0UI9AOmt2RpsA0HRpYZdH6qWQAnoRQQKcKSti5POSNiIF54HIcmw4msco8Mxax6gCfh3JY1Qgl5Sc8/WcH3Bzu50o90IJz3RIikiey8kkBbv8m4fr7XxkCDSLZEygiQgMDZnNGimpkR8VJndAOZGVqdvDFNBZ0alnI9m+i8w/qZG/NnAKfdGufyJCBMwGBXSlgS60nAjSHc8zG9tOQCHdLN9h+qaQYWCUDsrkTkR+a2DUSN/LidCNthJIYf54+a7y48Qls62WrUHPbJdxof1OGvPH2kLgsGc2FYrTmmNWS4lKiI5CfmLVxEexte4EUq7fZ+Xzj2odaC0UWmugn6Xu1fX71p2AAhqzcvlqULsK6ZpVN2PrTiDt8iEpWA38TnumO7Bdz3TLu2JDbLWMgD1el9G302IMekt7rfr4HO4HDuBx+wPHWtLvmV1B1kpcNFs00K3VCNDTUD7uBb2krNr4q5Gul2wBqeVBV4OXHdCgEwYU8L3/JaGQP5QIID1v3HmelFs+FAJWJCbsz6xriTgvu954BGhRRi7y36GROyVGjBiO8w/jdeN9ncG/BwAAAABJRU5ErkJggg=="
-                />
-                <span class="ms-1 d-none d-sm-inline">Retratos</span>
-              </a>
-            </li>
+  <!-- Main -->
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
 
-            <!-- Paisagens -->
-            <li class="nav-item">
-              <a
-                href="#"
-                id="paisagens"
-                class="nav-link align-middle px-0"
-                onclick="mostrarGaleria('paisagens')"
-              >
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD8klEQVR4nO1YTYgcVRDuGEU0RhAhEkVRRPSggkFRwRB/QEURBB2STNWsEHBvQSRszHbV0HgSPCiCQQ96iSIe1YueTPCisDlKEPxhXVF3NWB2k93tql73SfXsbL+0PclOT3dmD/PBo5meV6/rq1d/7wXBCCOMMMKmRitaugVYjyHLH8iyiqyu1kGSIOnPQPLWvkl3w0DKYxi/gCxnaleaiweQzEEou8opT8u3IcnZYSmPXRKsP+Eht60EAf08s4R+D219IAjclqBm7Inc5S1OnkGSvzO3Uu57EWCJOwvI6v7J+K7gEgNYMNsJ+bYvYQseT3g2GAL20tLNnivN9CW8L1q80du+32vTsi4d6iJgromkh5H0JLCcs6f9tvf5uePj7opO6rZAli+HTiBVnuV4j3R5ooiEuZHFAkTu2qETQNbXLlzA9HBQFWohYO6SpeWwEblrgJWyfC9TeZlWO3kKWT+x59AJAMtCd80DE267vTsw4bZ7BBYKZE6v/Xd6MxCY8qorbWQH0HOxoRNIs0+fMYCbiUBa3UlOFBOQ40VZqDYC45G7GkneTBstkrNA8h2EybMbIWGWTt3J5FimgHWiSPnaCEDodlpz18OSbwQVAqsmkB5uSH+8cAssb1fVtWKVBMZo+XZknfayhjZZmlYlgfWz8wNSjlZBAqsiABzfiaS/eQoKcvx8d36j4bYi6Ue5g8gHUeQu89dtHnHXIcv7qSFI5i14W219uGYCdiqTWa9vWQRKnszLGAlg/ThH4pi9t//3c3wHkP5a0Af9C6yvVEoAI7ejsOliWWi1dU8vObM4kn6Yk/u0yXJPt7PsNYB1ojICBiA9lbPUPxDqQxeTMxJA8l4usGPPCOeQkqdTI5F8kytmXBmBZjt5DFj+Wlv4ZIvlvo1Luy3A8s7/q63Mt0gfWVfwkNuGJF/nyL5eCYH16hm6nWUyCrb1QaB43fJIcWLv8vMar7qrgOQrj8DqS9HyrZUQKAto626/+7QLApiMX+w1/+BBdyWwfrHmqnPdA8xQCCAlj6d+nsXO3Nik3HsxuUbDbTX38m/jBiLQCvV+82N7blgmPYDIkucOszgpdwclgYMQsALWq5krgl1GAcmy99EZy/1lFK+GQB/CGMbPZRdh6Zi21qPvj1ZLQFa6wt1qWoQmyd70RjkrSL/YvWpQyS2Gdl1xpQQBnVlXqq27C5VnafrKI+kPY+HiTUEFAEoe9Xe0xAJZNbUeBtrJE/5ONEletj7Gm3OqUzMGQ8N6qo7y0+d3t33Ciomfy4c35IydQ0pZw6wOJH8OTXmSedMhGAStI+56YHm30wpngV2jxVfWzgtHS1t+hBFGGCG4VPgPyRgGh1mGAtkAAAAASUVORK5CYII="
-                />
-                <span class="ms-1 d-none d-sm-inline">Paisagens</span>
-              </a>
+      <!-- Sidebar -->
+      <div id="sidebar" class="col-auto col-md-3 col-xl-2 px-3">
+        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
 
-            <!-- Eventos -->
-            </li>
-            <a
-              href="#submenu1"
-              data-bs-toggle="collapse"
-              id="eventos"
-              class="nav-link px-0 align-middle"
-            >
+          <!-- Retratos -->
+          <li class="nav-item">
+            <a href="#" id="retratos" class="nav-link align-middle px-0" onclick="mostrarGaleria('retratos')">
               <img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE10lEQVR4nO1ZS4gcZRBuX1GJxic+Dr4OikbU9YWCjwg+QNGDwrBu19+7GjSC7ipxDc5MVdtexIMXFcSD+DiIJpCDEcS7aA6iiAYjghrQRFHZlRjd6apZ80v1zOz8Pcyzp3dnA1vQzG7/f9dfX3XVV/X/7XlrsiYrLxOl+FJDUgqK8SWrSVffAij7DIkFkh9Wk66+RRdsXKtJV0eBUG4xJNsNygFDvOgumu/Fi0CyH1DeD1Bu9oaVTZE9FpBfXz6DpfuF/JrakBnASI2nJohhwmZJkb5Wv8xjW7bY4wC5UrvHlczeaTqp0tClunWNJFydtf1QbhpYsatEjU+P8QsG+ZD+DgvAdNBlUHY4IN4bXHGSsHUPlHnMW2EJiK9eciDJ/oEVuGxTiOw6b4WlENl1LjutTn5eThtGzj6UvtYAmCP5DXgjEjOMDUAsNQpj8UYkZsg38E69iL2dZfGgaM8A4s0+8qMPluzZWXSYYaOgENnTszynmxMg/sPh8XlDfNURE8ZA/HFrEgLxZxn0xPVn4+WxtN2iZb7GraANI2otSfXugXQRv2KQq/o7uCEoTwPJ90DyVLd5ZtauB6zeNRVVLkz+L8f3OT3MW4b41WZrLL8YlDeAZJtP1XsLW+2JvezQDnVg49021xAvdJozWeIrDfGvjXkGKxcVCvYYQCka5JchshugbM8F5H/b8jvKAZ9kVjtf3RMnuYJ8MPkbZZcSgF+0p2UC0E8CGeRP3Hk+yq0d5j3cEQT13NAcBOTnZ2bs8csBYM6Zt93z7FGd5qonTVi90xC/mLEaf2Uie1auAAD5I4dl/glC2dRNZxAtnA8kP6XZSb6GUB6HUrxRQWobnYRmKNNAsqdlbpgrAE1c3Wy4ICCU69vN1RAwyJ8vzUWuAMpj3d5aFNmjTVme1B2bshlg9bZcAahMUHxxGoR82G4ekGDa+P6NgchumIjsmX0bPwgAlQCrdzjM8k3r+FRkT9VkbAJQz/eWwrP2FA07954es2zeZk/OFYCPPO4A2OW+naAs1wHxI27Ma2j01FnmsUY7os/rvanInmNIftZwCqh6T24ANLmcPHjJD+VaINkJyP/VqZCX9IUy3dN44isM8p+OU95M1inH9zuO+CA3AFpdnfj+rRsdThJfnkpSkq3K84XInpQYWYo3AvLvTh2YCyi+TMf01wnDffkBIInaG8yH3V5IL7d9ME7bYZA/TcLNcQAg/6X33JxwgeV2rKL8DSh7HeVVIHlXQ0FbCTeE3ASEstyoIF3AbgU2odyQsmnWrncpO9eDLfWsIZ5U3vZx4QJ3rFm8+LBSYmqdUKbTIBLjD7U7TkxyoxlCe7sapMeJ6TYhu9RZ6ltAea7duHFAqGc79VTaGTtJvLProno+n/aK7NBef7lO6XzkcQ07Dat249rlao1xwm2yp1I92s7UeCFzpk1IFzEoT7j50WCtrqJVLzMI4sXMm5EWgbB6e4rNUJ7xBhFNKD3iTnZUfXxiShqvDm+gdlqhXSbPA8pMt6qsYzqnxfgv8nJMJgkofiANVvYoc2kLPRXZE5SStdjVE/a7ljz8UdsJb5RSL0ZfDhqSgLx7HBfO81aD1D5TSRGI/+6DEOa0FR9p2HQSk1RWfkg5PQmX2qemeQ0VrUPahfbFNmvijU7+BzFZY2fr7X3WAAAAAElFTkSuQmCC"
-              />
-              <span class="ms-1 d-none d-sm-inline">Eventos</span>
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADKUlEQVR4nO1ZS2gUQRBdwT8RFfEUBUXjTdG7B1ERLwpiFMSTeBBF0JufiwfRg57Egx8UPXiRGBSMCnpQPCiBQEB3q2ZXJRDQZKonJqtudqqH2NKzPVGTXfczk81I5sHAsNP7ql5Xd1fVTCqVIMHUouDkVkgBHUzwTQpUzbhY2yLsdCnTFtp5JhxqluNykhAcKjjZ1oYF6Jn3iQQ+DkVUJwpOtpUFdpWEwP2GiYJl00znA4wOvV9pltNIqlEEoUxNE2RY+4mAkJBJBMQM3ANK9cyRDhxngm59ivmXwNcs8KBSatZU2w9FoEbeLdWOV0xOhA9VX9/82ApgAU/Nfz64AncpO92ivn5azDYeYgHCPLsZSwGek9ke1DHlEh8P4noWWGCCn0yZTVHbD00gBdwulR1wodIYJrhkxlyJoQDs1WM9YW2tOMa2NpsodUdtP4oI9Omx/yqBi3ZujSnQPtbGiUkEVN17gPBipTFMcDm2e8ATmW2md/iuG6GJz3nQ2jB+CtnpjVHbjygP4JNgjbsCdyuBi9Rw7xKmzGEmdMwGvh7fTDysncU3ldtEeKByuXmxFaCh1MvZUsAxJnzLBHn/EviKCQ7EvhaKGjIRIOqLQHHAWi0dOMMCnknCfv/UEVgo3etCD04XB3BV7CLgUqZNEjxigrHq73pgTJfVRTu9NhYCJMFJFlA0CWpUCrjj2tiuZ1r19y9Qn3sW6nsma58kvPvH2KIkPDFtAvSJwgTXxmdV4A2Vh2XVONWX3HIp8JZOaLKUua9WOp2mVAALOG8y7w/XgT31crs27vX3h9+pwbl67deESgSewC2lxgSl58CORvk929rJhJ7m0qVIrfZrRjkCv2kXmDOZ9VTD5IENwrMmCpZOgtXs10dehoDJ2m8MghaTCgml0nOlwKzfS9jYXs1+BALwhfn9SAi/J9ixjpoN/bya/TqJJxNIgnu62tRvHFIRQdnpllJH9/er9KSUkEkxFw5yxlejTJDXs1Cux/0/PjERdppyoauZIgr66+jv/rqjYSKXYF3QjE/XZ9ZiDWV3ldnIturzOVhOzXEc8nrmQzufIEGqKn4BioTY7CQkAO0AAAAASUVORK5CYII="
+                alt="portrait">
+              <span class="ms-1 d-none d-sm-inline">Retratos</span>
+            </a>
+          </li>
+
+          <!-- Paisagens -->
+          <li class="nav-item">
+            <a href="#" id="paisagens" class="nav-link align-middle px-0" onclick="mostrarGaleria('paisagens')">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADpUlEQVR4nO1YS49MQRQujA3iEeKRiHgkgoVHLERig7BBBAtvFki8LYlfYWE2DDZCWBAhRMKIx7Dwmkj3qTsTIxJGz61zZzxnpk81Sqrv6c50923dc3smbkd/SSU359Sp+1XVV1WnSogaaqihhoGAMWYIebCbEJoI5Q+/wBPC+E7rE1GHRrigUZrgAudElEHo7LBECeV3UrDXdLyZZNzYZFKwz9rYt01EFYTQxKO9P9+n0TngdwCeiKiCUHZbkibxdmK+z9p4Bn6IqIKqvwPAEnIO5Ps0wkGW0GMRVRDK7TmL2GsdbUvOIlawVUQZGuF88W1UNoiqOMjQ2WGlkp4Jvzyys1MVB1kN/x2SrtxESj6zJenBRlFNIBVfRErqzC5hv61NVAOMeVCnUb5i4qdJyXruyCvrE1GHVvIkp7htJtE80haN8C5tU/JkRVJ05abBYZ35GTpzCKGXFPxOobMiY09hfKW1WZ+tU2575LYsKJCiG1s4KOSNMUP7pL1n8v0a5VnOWZps3TKl+JKJ1/eR4stBkaJW8pgvE2g3n1+PLSDktY7WCj6wlI6WbA/hBNd9b9zYKNP+YoRGeMvyPDGg5HsTcnomqUqis75YvZSCNZyUdfe6rbOK1UsqmE0IPWkperA6G49yOUsxmfRi8wYuR1HyLo/+xVL1NcpLnD02BuUwvhTlo2JJmkbZwLJ6Wo4US8Kmt6xtDLpwFBD8CuMJwfVJxPcUEPTgMM/SJ/PlzbiC+K62MVrBR5bSoYrIGwVTSMkuJrO53DhSsIVn4Uu31zo1Y+/pik0jBd/SUvRgQ7H4lIK1mVtYb0fLzNAd0Epe54Zuhoi9xrG3MjZCuMMje6VkPMIVltK9UOm0vQEFjWK42YMt9tGKCXn22aRkfLszgRBUOsaDXf37ed/gAB2HWD+KlOzsLxnC+E7udGc5nc5Co7zMI3e/kttQzg7md+R2f9vQCm6w7K6WFZBEuS67gBLODFEh7AzyYHyzi7i/8T1lLvy+W5h/mrrySCXEA7bEg2Hb0QiHeFATQVtv0CHyzBgzLOwP818aKj2UjH/4PfzrQ29ORum1zBUVQnfC0mx7CmZX2l7STz/8TNiDVTlOzunbwub0QdAoF/s7T3jp5EMjHOdZeGc5Zx2EcIodzca8GC4iCmMe1JGC57yjnUobtRdfQgp+kpIpO2oi4qAOZ75/B4df2nWW2Wlp/suTXsQLNNvTsvHfE5GhiuX+rxVRQw01/O/4A7Qd8pOI03cXAAAAAElFTkSuQmCC"
+                alt="landscape">
+              <span class="ms-1 d-none d-sm-inline">Paisagens</span>
             </a>
 
-            <ul
-              class="collapse nav flex-column ms-1"
-              id="submenu1"
-              data-bs-parent="#menu"
-            >
-              <!-- Concertos -->
-              <li class="w-100">
-                <a
-                  href="#"
-                  id="concertos"
-                  class="nav-link px-0"
-                  onclick="mostrarGaleria('concertos')"
-                >
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFQElEQVR4nO1ZaYgcVRDuqBEPjEfQxHgbDZ4IoiIKBo9fajwZszuvZpdEGfFiTUx0p6uGBq8fCuKBVzwgCuKBiooHgmJ+CB5/1CgJahAPPBDjQXamqya7T2pmeuZ1T8/shtmdnUA+6B/Lez39fe99r6pereftwvTD+Hw6BOXjvJ0RQDwEJBaQ2fiVS7ydDQb53qqAmogQipU7oSj56MmNhku8fgYE9hAg+akhIvEY5DHAygVePwGKkjckz0GBTwEsHwPIv7YTEInI+XKG1w8YDspHA/FE3TJ/A0mDvCEuAcpTBuVJg/x+QsQDXj/ABHYeIP/ZutJcymHlIp0zhOXFcVtxyRTlTK9fkKPwYsBw3CE4ASi361gWS0cZlB/ShPUFlmPpCEDZ0uJz4v8MhZf1PXlD8n2TtISA0rSTz5Wdhjwgc5Yql+YoPBGQ/2p3HvqWPPjhsobniX/pW/ImGDu8I3mcJc9nR+2BeugAeUW7dF8lj/JdX5HP3GH3B+RHAZsHTiNIJrAHufOG/LHDXPKGOIyKtdbyQeN85cIZJ7+iYA82KF+kJKHtutoueUD5NnlgvTqyxNmek1cYlFcTsftjTftZP7w8mjMQjC1Kko9sE6G6AyhfGeTfssXK+V4vkCvKUnfFAdkk5wwU7AIg+Sa28o64WYUhedoprB5vGfftoYCy2SWvh9xZ8Vf0SZ6VngGoWfIO+nJWC3mSTY61BCi8InVXSFb1nLwphCc59tkaBHa3aGw4sAuT5I0fXplKHrkCKOf0lHxmld3bIL/trOAL0Zhaw6B8HTsbxAONMZKNk52baYSdo90Bg3ILIN+n0QVIXnStY5DHs0U5ty3B2SKfRV5uSL7sdK2rV49rdX4+sPvECKo1/PBqHcussQsTpUPFEF8zI8Qzgd0TSNZNRlyzpiaf6D29ZCfywUOO57f2hLwCkB9MZNR/DMp6g7JaL95KWm2VydjdPQfVHXC9r0SLcmMi2ligcJ03UwA/XBb7GMozK9fa/ab6fkp4bH1UGMrrhvguXYwhLC+eNgEG+ROH/Eud5mq6V6slWxupImpFnlNlxmsmQLmpa/JAfJoTWcZyo3Z+u7lqH0D+t+71bVmU82K/FYs4tWgzHNgDAOUNjVqtgYDD4cDu1ZUAg3J9WlzvML/h9zQRugCGZCQKsRGyQfnYau8T+S1XxEDBLuhSAD/S3AFZPdn8XFA60u0k6K61qyJ1bvWui5ypBgOS12J3B+T3vG4BxE84nr22hcRouETnRCVB1FFzb1C6E4OF8AT3PUN8f5ptnDPwu97EpkPAw05yGkkZ31D/4ITarYOI65rkZaQD8QlD8mbX1ml8TMuFpoBnU8bXxz7uiNAVBOR3quExsPOihGiQ/3De2WBIXq5ePYtyszZwp4V4BOPL2W6WTU1UxB+4IjqFP70SOiF5i1utzgiWBnYPt0hz76sR4Da7r0H+KCaiXuO3CKgd1raXnRkBEN/j2GhjPm/nTibCED822W1NLdMTAQPB2CJthzhWKqTNUxGA8jwgfzhI4fGpc5A/a4jsVYdBAShrnK0fb2eRKfSJ6nGet+vfXq+Qz9u5zZBZ69HkKLxqR37D+HKr8/6nXq+RG7Xz3T6O7oQmpKnUK5rItATvlBR7Aqj+o81pidRKjB8B5YY0S2gUyyHnYuRJNnVdpHUD7ddogkrJoiVAvjvWFkT5OVFhbssSn+rNPuwcQ7zSzRENkvWsm1h1TVyb+4R8vJWi8dwQf15f4XdVnI5FpbFazJDgjtziZgXRykfQsmOI+ORk+bEL3tTwP9cr3Y2Pd6oiAAAAAElFTkSuQmCC"
-                  />
-                  <span class="d-none d-sm-inline">Concertos</span>
-                </a>
-              </li>
+            <!-- Eventos -->
+          </li>
+          <a href="#submenu1" data-bs-toggle="collapse" id="eventos" class="nav-link px-0 align-middle">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABhklEQVR4nO2ZUU7DMAyGcweeGOfgBLyAxhW4BNo4AONWaDwwcYQ55RF4IkZIY0zC7kNRRhCdKDiFsWTMn5SX1rH9x2nUusYoirIZlPfFPju4Y7TVwnD21t9L7U/EO/4UrBY0tT+Rd+ex11ftT0QFrLoCpYNDcjAktM/1/SkFJITRl3u7YRjBH2OxW+J4r1XyhHDWFIzQXjbYjurX2wigCH/s7E2wPY1e+bcJ8MJoe5WDbZMQwvFRyKUqXXEgT3BwEVaoZzKBHRzPF9XZc9GYHDx549QrX6eawFYQ8Ggk/uwc/iUcm9e/FEAtj8ZlDEIYrbkAu3DEbvYWygFWAYlhrUBiWCuQGNYKLAlCuIp9fciyAm0/MbMV0DYuq4AloRWQ0IdY4LuPI2roE2X3EP8U3hgBlGFfaPZwvTPfYg4morFv6Aa1fZMJjOOTIGAoGpcOuuG9xPcj+zO0HZOIGdqOT/6jNwrdqImEMFh1G4XlPtGglXqvNvwfmKZL2k59DtErryiKWTteAaltDPeRossVAAAAAElFTkSuQmCC"
+              alt="planner">
+            <span class="ms-1 d-none d-sm-inline">Eventos</span>
+          </a>
+          <ul class="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
 
-              <!-- Desportos -->
-              <li>
-                <a
-                  href="#"
-                  id = "desportos"
-                  class="nav-link px-0"
-                  onclick="mostrarGaleria('desportos')"
-                >
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQklEQVR4nO1YS2gUQRBtFfwgfhBE9OIHfwQ/F38gXkT8IIIIC2a71qD3iBJ/O1XLXMWD6C3iRRQ0ehFFRRANGg+iiF5EJUZPwZM5qMlO1agtvbrZzrBhJ3Ezu8F9UCxLz7x5r7u6q2ilGmiggf8L2gt3a+IXgMxAYuKGRv6c8WTdIA+G24G4rzCOzJbTco+pePCCPSMRXcbE2ZIBuVb2mbE0UZj50YsffgXICeTn/y40J1sA+SkQDwwryDczVZWQOmlmlbj5F6D0OPFOk9xozgYr44pfD8hhpRlVVQZUXsH+WCY0ye04KZG0AfgTHZUNoHwqvhB1nJSBtJ9fUowMhtsGV4HkQ2UilN7iC/v9/gW1MKAcWA2lDS69DQNQ7yugSd4XX8icCpbX2gD4+aWlk0i6KxMhPxo0QMG+WhvQXrjbKXJP4hD5juObtTYAJJecWnC6IpE9OjXyz2JVTHvhrloZ0JGiav/HI0O5Ujp7+WsmF+5I2gAQr3WPdEC+F5ss5Zs5bkEr9CckHYlVYuRzQ9p15C9pHFg4IsI/qeSaGBqtrWZKtcRr38wcvn3gvnRONo+KeH/WzAOSq+WIW3wzu2oGKFgxjPjHduyfP5AmXg3IZzRJt00nTfxMVREaudnZcwOa5LLtgZQyE9R4ALj7C+WEGk9o8fOLNHFQWoEqpEySAJTrTs53JvZhjdKqibuAgr2j5QBPDrtHdbMnG1QSOHTczChWa/ubJmkbnXj+4RhoV0nB981EIHkZOfLuNFOwrNK7gPnFQ9NGbKF6mvLNZJUkbB3QxA8jQhhQbgGy1tmgqVCg2sz0QlHMyRFN4StNLFHxB7NmrqoF7Kxp4vNDUyFu2PaE2xOf+XI4kOU1mvjB354pjvjOxDbsSGAbLkA5ppHvA8kb28kC8jcgeTuWjWB1UyobNJVrAeregO+bicW7U41yYdwZSNv0KfUzPdFxt7+vi40bhb0AcDrKrui4Jvk4aDAnG1U9IXXUTNMor5008aPPAMpFx+CDVMpMUrVGi2+mAoZb7Z2+I+679sz86LOQ5VVuvbAmtCebapJOkAv3xLmCjxvaVmcMdyZmQDuXX1UzgXw3MQPjfgUaaKABVTf4DVWKr1ItbiUzAAAAAElFTkSuQmCC"
-                  />
-                  <span class="d-none d-sm-inline">Desportos</span>
-                </a>
-              </li>
-            </ul>
+            <!-- Concertos -->
+            <li class="w-100">
+              <a href="#" id="concertos" class="nav-link px-0" onclick="mostrarGaleria('concertos')">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEf0lEQVR4nO1Za4hbVRA+2tKiCIqgiKKCiKCi1rdWFBWU/qj4xB+KBcEHKOhfRbCCVcFHkYoVRIv4qA8oai3+Kl0UxNeK1d7MJItFrK3unbm71sruZia2R+bm3GySzXazbnZzCv0gkJxXvjlnZs7MHOcOY+GgVLpaCLcK4agSbPZ//nKiOxQgI6VzjbAy+pYPwacuZoyP7DhVGTYIwb9GWAj2KcGTuUD5b6y5GOH3JscLwfPCMBGIijCs838MnWD946PJaaE9c7FhjPFkYeCw4/uVcePEcOWM5jFKsLquQrjJxQZleLiu47BdCC5q769lcGNxMjXGa11M0KxymRDszXefS/e090uK9wqh1vvxJRcTNCtdXpBXxg+894uKPu/9EcL4lBAcCLr/rLW5eMkPLLZ2IVhfkA42Yd7oQRcTtJX8+wX5dgGEcbhGsNLFTt4PDS0VxrVCcJ+LGQchvyWoy/cuVijjxXk8w7m7/Cgn75MlFhrU1QVIhvE8FyMOk+8Xotz5GsFKIfxGGP9Rhp+E4P5OF4xmcEWrwfpFLQbLfSCvjA9Mic/DLRk9+WpWObsIqJTwEZ8mx1QzuM2iR/tYfwfyG6MgbzAdDqTecE1QgneDD18fyP8dHXlJKxfkO80wMZZVTplyMgQHhGE8SvLe+yMtqQ6xydpOY+xUmnLW96Ih35wJCeFIkd61wwgLle+spniHCRwFeZ+TwueKNK/KpVu6mzewWBg/6xt5PzS0tJrBrULwbSO5zmBVt/OFYU1fyNcYr1PCt0xVJn087FQqXTOVJH6pjIPtRaYqwVmWgNiJ1bh8/YIQl+Hy+cLwVWvxCBMlfNTv2nVUxzkE34VxO5qFUMInQvvbDQeQwSrLuDSDxy2McL1EfhExjgXv8bsdfzVLzplpnpE28u1CWA4bbGab1XiUsdJ2Y7/aO/KMNzVVv17zewaPns38ZiHsRCZVqFkFczX8tbAL++56Af/Xj8eZkYWdXz3T+Ol0PheCcVAIv260pclJFmoow2NWzzFvpgxvhv/6pCcCmH6HI93azfjpdH4m1O8DeDl4papQ6cI5EW8QYvjcFrWLpysi0+j8tOunyTKLUJXwt4J8NcXbXa+gjD/kC6fJsrnofDtqaXlF7sFabWC7JfOulxCCbXmdMYMbZjOvk8431mS8OxRmTdf3COErmpavmpdqmjCsC0e7phfrTaTJmY2yOMMzzYWqeYGmuLyofJmhzXk9wk1hvS29YTgbO2B42s0BIR/YbzGTPUK4hYKOwJXhj7VTTb7rdRg2BIN93S00JPhoJdj9f3ZvfLR0en0DsNb+orIg8D5ZUngkJSzZO9Vs5ud5cH0D3nH9gh/deawy/FwI0e1J5Luf365WkZg5AJz3RzZtCAG7lcuXHmy8+faiuqYMH7oY4C3AIxgo3mJzf94hH6g//YSsi2Cfveu6WOAt+CJ4cTLMxhEheMHyYTsVYbxLGL8onn6qXL7ZxQhNcbnVPzuVERtPP2l5hYsdynhJnlkRbM5DasKPleEhKyv2m5s7lPEfxVrZkpDzS2YAAAAASUVORK5CYII="
+                  alt="rock-music">
+                <span class="d-none d-sm-inline">Concertos</span>
+              </a>
+            </li>
+
+            <!-- Desportos -->
+            <li>
+              <a href="#" id="desportos" class="nav-link px-0" onclick="mostrarGaleria('desportos')">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFJUlEQVR4nO1ZXWgcVRQeU7X+Y9UHWxVRURBFEEXrvxX/rT9PtlgUBR/7INIfEQR/EysWhaL2Qe2DghX1QZT2pT+0PigYaq2ZczYrWhobkz1novlpmj13SK+c2TvJZHcmWXezm63mwLAw986933f3nvOdc6/nzdu8/bcsJFguBLuE8YgwjgjBzpDgoYZOau3uE00ASw3DemHYLgSDwsBC8JZlPLPacYThDcNo0x5hfLVxgBlHsiY2DL8b8m+bacwi48MloFA0jGsswWJ9DONa986G5D9YN3AhfFMIhiqAEoAQfCDkr7CFrvOlP3eNYeyMQBGMC+EGm88vzBpbCHa5sdaUtxn217lxdtZFQMFnAU4n3HmSMLwmhKH7N35WYhkEhrWPrnp52yjjEkdguD4CjP0RkACWVoAlWCwEK4VgsxD+oMTiNhP4NxrG7skt4q+z1rbNBYG+iEABb04CNgRY4XSEYZHxkQmCvZ2nCeF7QnDMOeXesb7cJSlbaG35vOprbswd9REg7JgmSoyoQxuGF4TxHbfaYyHjsuQYYSF3vyHojVdUCvhM9J5gefIf0lUvrXwUKGbLie0CIWw3BIeFgRzg9bql1MHLyG6KQRrG66eMM9h1jmH4PEF+Y/QNw+tNCaNVkm0zBJ+6VeVi0H1leR9hXDURggmeSwjZTidiwyUhq3PlayehUQi/cQD/OPqXf3F5n5Bzd7kwK2OF/GVeq5nt6TlVGPe4MPplWh/D8LFr/8JrRbNB/iyNVkX2H0trH2VcEuU+GqEKuVtqnkgYvstOCbIf/a5iLPKvFcIgTVnT58ZXXKj83lp7wgT5fH5hpP6Mf0YPYYe1XSfPMgHcWxmt4EfX9nI1BGyh6wwFWCKRe3wCPMO2FI3p8BppJoDVJcfFQ7Zv/+nVficEzzpf+C3adg68MBQM43W6vVxA6G0YeKfQgzpRkXOPTtc3DPy7VS8UbPSttQsMw4E4asXgZQCu1nbVE9d2uGEEDONWN8nX0/WzvbnzVB8cyO2xEIYFvC/hWwUZ8K/S90rC/RO6hdobAj4M4F6374+kxfykGYYtZft602QbbjWEPangGbZlpuXVOnFa1LEHD55iGH/NSsimgCe4Q0OmMIxJAE/pr8tyV1dgqhb8vyMwNeokw6DuYVXgrDk0BGot4bbZS+7bJyJChKEmezWBr8eKBFdoxliNECloBx6TgCZ1AIZM0H2DOmxTwEeTE+5w/86H0/Urkn95tG0IjoWMdybbVLwM42cp27XB4BlXxRmnHYJzZ+j7rdtmW6apudsjQSPojVS3keDt3z+dHZeZUsCnZ+pvGPY7gXuxIYAkw4nTok7Un+B959R7kvlLloUB3OP6j471d1/aRAKVUUcdLc7j43hdjRmCT2Lx8ubKSpKP+2pRxSkKTLDSmwvT8q+WZK08aRPGfjt4YJHXTBsNui+Iz3BqPXRVf4mrNGF412umadnnVv+resZxR49Wix6vWRZS7oH4DOjowC8X1TUW47JYP7xmFedaaLg04PlkW+n8E8ZrrOY2NoXA5KET7K84xKqBgG4dIXg7s75tULI2bgbgJu94MqsRg2C3i9ubpzgh4aGGpQWzZVpwxOVdHLPd2WbkD3px4bWq2cEDiyZzcv/J6J21bYmjjn3q3F6rmsTH5AS74mRNVzxW0dEgf6HXyiZxqhwX1+SvcKWfqebibs5NJm5kcrca8m/X04as4rslTVJvZOAj73gxW7qR2RCJTnRxje3lIjZv/3f7B2nAUaz7tFnwAAAAAElFTkSuQmCC"
+                  alt="exercise">
+                <span class="d-none d-sm-inline">Desportos</span>
+              </a>
+            </li>
+
           </ul>
-        </div>
 
-        <!-- Carousel -->
-        <div class="col">
-          <div id="carousel-container">
-            <div
-              id="carouselExampleIndicators"
-              class="carousel slide w-100"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <!-- Fotos da respetiva categoria são injetadas aqui -->
-                
-                    <h3 class="text-center">Selecione uma categoria.</h3>
-                
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Anterior</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Seguinte</span>
-              </button>
+        </ul>
+      </div>
+
+      <!-- Carousel -->
+      <div class="col">
+        <div id="carousel-container">
+          <div id="carouselExampleIndicators" class="carousel slide w-100" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Fotos da respetiva categoria são injetadas aqui -->
+
+              <h3 class="text-center default-text">Selecione uma categoria.</h3>
+
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Seguinte</span>
+            </button>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- JS -->
-    <script src="./assets/js/script.js"></script>
-  </body>
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <ul class="list-inline">
+        <li class="list-inline-item mx-3 footer-link">
+          <a href="#" class="text-decoration-none text-light">Biografia</a>
+        </li>
+        <li class="list-inline-item mx-3 footer-link">
+          <a href="#" class="text-decoration-none text-light">Serviços</a>
+        </li>
+        <li class="list-inline-item mx-3 footer-link">
+          <a href="#" class="text-decoration-none text-light">Portfólio</a>
+        </li>
+        <li class="list-inline-item mx-3 footer-link">
+          <a href="#" class="text-decoration-none text-light">Blog</a>
+        </li>
+        <li class="list-inline-item mx-3 footer-link">
+          <a href="#" class="text-decoration-none text-light ">Contacto</a>
+        </li>
+      </ul>
+      <div class="mt-3">
+        <a href="https://instagram.com" target="_blank" class="mx-2">
+          <i class="fa-brands fa-instagram fa-xl fa-fade" style="color: #faebd7;"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="mx-2">
+          <i class="fa-brands fa-linkedin-in fa-xl fa-fade" style="color: #faebd7;"></i>
+        </a>
+        <a href="https://pinterest.com" target="_blank" class="mx-2">
+          <i class="fa-brands fa-pinterest-p fa-xl fa-fade" style="color: #faebd7;"></i>
+        </a>
+      </div>
+      <p class="mt-2">&copy; 2025 | Desenvolvido por <a href="https://github.com/Guilherme-Carasek">Guilherme</a>, <a
+          href="https://github.com/Lfonseca3903">Lucas</a> e <a href="https://github.com/ruben8pereira">Rúben</a></p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS -->
+  <script src="./assets/js/portfolio.js"></script>
+</body>
+
 </html>

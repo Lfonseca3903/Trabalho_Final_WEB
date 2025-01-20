@@ -1,0 +1,85 @@
+body {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+  }
+
+/* SIDEBAR */
+
+#sidebar {
+    background-color: #1a1a1a;
+    max-height: 100vh;
+    max-width: 20.5vh;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  #retratos, #paisagens, #eventos {
+    transition: 0.3s ease-in-out;
+    color:rgb(250, 235, 215);
+  }
+  
+  #retratos:hover, #paisagens:hover {
+    transform: translateY(-0.5rem);
+    transition: 0.3s ease-in-out;
+    color:rgb(170, 170, 170);
+  }
+  
+  #eventos:hover {
+    transform: perspective(100px) rotateX(20deg) translateY(-0.5rem);
+    transition: 0.3s ease-in-out;
+    color:rgb(170, 170, 170);
+  }
+  
+  #concertos, #desportos {
+    margin-left: 1rem;
+    transition: 0.3s ease-in-out;
+    color:rgb(250, 235, 215);
+  }
+  
+  #concertos:hover, #desportos:hover {
+    transform: translateX(0.5rem);
+    transition: 0.3s ease-in-out;
+    color:rgb(170, 170, 170);
+  }
+  
+  
+  /* CAROUSEL */
+  
+  #carousel-container {
+    background-color: #1f1f1f;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    align-content: center;
+    justify-content: center;
+    max-height: 75rem;
+    max-width: 75rem;
+  }
+  
+  
+  .carousel-item img {
+    height: auto;
+    width: 100%;
+  }
+  
+  .carousel-inner img {
+    object-fit: cover;
+    height: 500px;
+  }
+  
+  .default-text {
+    transition: 0.3s ease-in-out;
+    color:rgb(250, 235, 215);
+  }
+  
+  .default-text:hover {
+    transform: scale(1.25);
+    transition: 0.3s ease-in-out;
+    color:rgb(170, 170, 170);
+  }
