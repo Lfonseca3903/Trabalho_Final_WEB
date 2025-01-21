@@ -1,0 +1,51 @@
+/* NAVBAR */
+
+h1 {
+  font-size: 35px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.lobster-regular {
+  font-family: "Lobster", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+.nav-item {
+  transition: 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+.footer-link {
+  transition: 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+  transform:translateY(-0.5rem);
+  transition: 0.3s ease-in-out;
+  color:rgb(170, 170, 170);
+}
