@@ -1,0 +1,164 @@
+/* parâmetros globais */
+
+    .main{
+        background-color: #E8E8E8;
+        /* \/ deve ser o tamanho exato do footer \/ */
+        padding-bottom: 0px;
+    }
+
+    /* texto primário */
+    #titleBlogCard, #headerBlogCard, #articleTitle, #rowBlogText {
+        color: #333333;
+        font-family: "Montserrat", serif;
+        font-optical-sizing: auto;
+        font-weight: 350;
+        font-style: normal;
+    }
+
+    /* texto secundário */
+    #previewBlogCard, #rowAutorData, #imgDescription{
+        color: #6D6D6D;
+        font-family: "Montserrat", serif;
+        font-optical-sizing: auto;
+        font-weight: 250;
+        font-style: normal;
+    }
+
+
+
+/* navbar */
+nav{
+   /*  h1 {
+        font-style: italic;
+        font-size: 24px;
+        margin: 0px;
+        padding: 0px;
+      } */
+       
+      .lobster-regular {
+        font-family: "Lobster", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+          
+}
+
+
+/* blog cards */
+
+#rowBlogCard{
+    padding-bottom: 50px;
+    #titleBlogCard{
+        font-weight: 700;
+    }
+}
+
+#imgDivBlogCard{
+    width: 320px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 20px;
+}
+
+#imgBlogCard{
+    border-radius: 8%;
+    width: 320px;
+}
+    
+
+
+#cardBlogCard{
+    border-color: #3D6A6E;
+}
+
+#buttonBlogCard{
+    background-color: #D7B76C;
+    --bs-btn-color:#333333;
+    --bs-btn-hover-color: #F9F9F9;
+    --bs-btn-border-color: #3D6A6E;
+    border-radius: 20px;
+}
+
+/* blog article */
+
+    /* banner */
+    @media only screen and (max-width: 768px) {
+        #bannerArticleDiv {
+          display: none;
+        }
+      }
+
+    #bannerArticleDiv{
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    #bannerImg{
+        max-width: 1440px;
+        height: 400px;
+        width: 100%;
+        filter: blur(5px);
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+    }
+
+    /* article header */
+
+    
+
+    #articleHeader{
+        
+        max-width: 768px;
+        padding-left: auto;
+        padding-right: auto;
+        @media only screen and (max-width: 768px) {
+            padding-top: 0 !important; 
+        }
+        padding-top: 10%;
+
+        
+        img{
+            width: 100%;
+        }
+
+        #colLogos{
+            img{
+                max-width: 25px;
+            }
+        }
+        
+        #rowBlogText{
+            text-align: justify;
+        }
+
+        #divArticleImg{
+            padding-top: 5%;
+            padding-bottom: 5%;
+            max-width: 61.8%;
+            @media only screen and (max-width: 576px) {
+                max-width: fit-content !important; 
+            }
+        }
+
+        button{
+            background-color: #D7B76C;
+            --bs-btn-color:#333333;
+            --bs-btn-hover-color: #F9F9F9;
+            --bs-btn-border-color: #3D6A6E;
+            border-radius: 20px;
+        }
+    }
+
+    footer {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+       
+      footer a {
+        text-decoration: none;
+      }
