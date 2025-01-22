@@ -62,15 +62,14 @@ body {
     max-width: 75rem;
   }
   
-  
-  .carousel-item img {
-    height: auto;
-    width: 100%;
-  }
-  
   .carousel-inner img {
     object-fit: cover;
     height: 500px;
+  }
+
+  .carousel-item img {
+    height: auto;
+    width: 100%;
   }
   
   .default-text {
