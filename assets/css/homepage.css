@@ -69,8 +69,10 @@ body {
 
 #introducao img {
     width: 100%;
+    aspect-ratio: 1;
     margin: 1.5rem auto;
-    max-width: 600px;
+    /* max-width: 600px; */
+    object-fit: cover;
     border: 0.25rem solid #1a1a1a;
     border-radius: 25rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
