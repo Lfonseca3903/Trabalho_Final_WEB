@@ -49,7 +49,7 @@ body {
 }
 
 #pequena_introducao:hover {
-    transform: scale(1.1);
+    transform: translateY(-0.5rem);
     transition: 0.3s ease-in-out;
 }
 
@@ -85,6 +85,13 @@ body {
 }
 
 /* SOBRE MIM */
+
+#biografia {
+    background-image: url('https://i0.hippopx.com/photos/852/242/499/landscape-black-and-white-nature-mountain-703d1c7abd33b4d2acc482d465d76296.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
 #biografia .card {
     border-radius: 1rem;
@@ -126,6 +133,13 @@ body {
 }
 
 /* FORM */
+
+#contacto {
+    background-image: url('https://i0.hippopx.com/photos/802/350/397/manhattan-new-york-city-new-york-city-4504a69737d72c9e207d4d222bdef546.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
 form {
     background: rgba(255, 255, 255, 0.9);
